@@ -1,8 +1,8 @@
 import React from "react";
 
-const HeroBanner = ({ bgImage, title, subTitle, btn1, btn2 }) => {
+const HeroBanner = ({ title, subTitle, btn1, btn2 }) => {
   return (
-    <section className={`min-h-screen w-full bg-cover bg-top`} style={{ backgroundImage: `url(${bgImage})` }}>
+    <section>
       <div>
         <h1 className="w-[798px] h-[143px]  opacity-75 font-inter font-semibold text-[118px] leading-[100%] text-white">
           {title}
