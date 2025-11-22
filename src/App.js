@@ -1,25 +1,24 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
-import HeroBanner from "./Components/HeroBanner";
 import  Footer  from "./Components/Footer";
 import  Home from "./Pages/Home";
 import bgImage from './Images/bg.png';
 
 export default function App() {
 return (
-    <>
-    <div className="min-h-screen w-full bg-top" style={{ backgroundImage:`url(${bgImage})` }}>
+    <> 
     <BrowserRouter>
+    <div className="min-h-screen w-full bg-top bg-cover gb-center bg-no-repeat  relative" style={{ backgroundImage:`url(${bgImage})` }}>
+    
         <Navbar />
-        <HeroBanner />
+        <div className="pt-20 pb-40">
         <Routes>
             <Route path="/" element={<Home />} />
         </Routes>
-
-        <Footer />
-    </BrowserRouter>
     </div>
+    </div>
+    </BrowserRouter>
     </>
 );
 }

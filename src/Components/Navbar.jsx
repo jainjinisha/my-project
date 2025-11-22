@@ -5,9 +5,9 @@ import { FiSearch, FiUser, FiShoppingBag } from "react-icons/fi";
 
 const Navbar = () => {
     return (
-        <header className="shadow-sm text-white bg-[#0E0E0F]">
+        <header className= "max-w-7xl mx-auto shadow-sm text-white bg-transparent ">
             
-                <div className="max-w-7xl mx-auto flex items-center justify-between h-16">
+                <div className="flex items-center justify-between h-16">
                     <a href= "#" className=" flex items-center gap-3">
                         <img className="w-10 h-10 rounded-full" src={logo} alt="Logo" />
                         <span className="font-semibold text-white">FloraVision.</span>
