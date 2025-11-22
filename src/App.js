@@ -9,7 +9,7 @@ export default function App() {
 return (
     <> 
     <BrowserRouter>
-    <div className="min-h-screen w-full bg-top bg-cover gb-center bg-no-repeat  relative" style={{ backgroundImage:`url(${bgImage})` }}>
+    <div className="min-h-full h-auto w-full bg-top bg-cover gb-center bg-no-repeat  relative" style={{ backgroundImage:`url(${bgImage})` }}>
     
         <Navbar />
         <div className="pt-20 pb-40">
