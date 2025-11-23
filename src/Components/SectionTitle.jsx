@@ -1,9 +1,9 @@
 import React from "react";
 
-const PlantCard = ({title}) => {
+const SectionTitle = ({title}) => {
     return (
-        <h2 className="text-bold text-white text-3xl tect-center">{title}</h2>
+        <h1 className="text-bold text-white text-5xl text-center py-[70px]">{title}</h1>
     )
 }
 
-export default PlantCard;
+export default SectionTitle;

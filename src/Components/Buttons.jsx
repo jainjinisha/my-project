@@ -1,24 +1,10 @@
 import React from "react";
+import BuyButton from "./Button";
 
-const Buttons =({btn1, btn2, showBuyButton=true, showPlayButton=true})=> {
+const Buttons =({btn1, btn2})=> {
     return (
-        <div className="flex items-center gap-4">
-        <div className="mt-6 flex gap-4 ">
-            {showBuyButton && (
-                <button className="w-[180px] sm:w-[200px] md:w-[217px] h-[50px] sm:h-[60px] 
-        border-2 rounded-xl border-white flex items-center justify-center opacity-[100%] bg-transparent">
-          <p className="font-inter font-normal text-[18px] sm:text-[22px] md:text-[28px] ">
-            {btn1}
-          </p>
-        </button>
-            )}
-        
-      </div>
-
-
-        {showPlayButton && (
-            <div className=" flex gap-3 items-center">
-            
+        <div className="flex items-center gap-4 mx-[45px] pt-[20px]">
+         <BuyButton text={btn1} />
         <button className="w-[60px] sm:w-[65px] md:w-[70px] h-[60px] sm:h-[65px] md:h-[70px] border-2 
         rounded-full flex items-center justify-center">
           <div
@@ -29,12 +15,8 @@ const Buttons =({btn1, btn2, showBuyButton=true, showPlayButton=true})=> {
                 opacity-75 rotate-120 rounded-[3px]"
           >  </div>
         </button>
-            <p className="px-4 w-[119px] h-[36px] font-indie flower text-white">{btn2}</p>
-         
-      </div>
-        )}
-        
-      </div>
+         <p className="text-2xl font-indie flower text-white">{btn2}</p>       
+      </div>     
     )
 } 
 export default Buttons;
