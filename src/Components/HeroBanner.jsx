@@ -1,6 +1,6 @@
 import React from "react";
 
-const HeroBanner = ({ title, subTitle}) => {
+const HeroBanner = ({ title, subTitle }) => {
   return (
     <section className="px-[45px] pt-[225px] text-white">
       <div className="space-y-4 max-w-3xl">
